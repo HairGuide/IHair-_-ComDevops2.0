@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairGuide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-left">HAIRGUIDE</div>
+        <div class="header-right">
+            <button>Nossa Unidade</button>
+            <a href="{{ url_for('pag_2') }}"><button>Serviços</button></a>
+
+
+        </div>
+    </header>
+
+    <div class="intro-section">
+        <h2>Tudo para facilitar seu dia</h2>
+    </div>
+
+    <div class="main-content">
+        <p>Escolha seu serviço</p>
+        <a href="{{ url_for('pag_2') }}"><button>Ver mais</button></a>
+        <h2>O que é a HairGuide</h2>
+            <h5 class="texto">A HairGuide é um sistema inovador de agendamento de serviços de cabeleireiro, projetado para oferecer
+                conveniência e qualidade aos nossos clientes. Nosso objetivo é simplificar a sua experiência de cuidado
+                capilar, proporcionando um processo fácil e rápido desde a escolha dos serviços até o agendamento.
+                
+                A HairGuide foi criada para revolucionar a forma como você cuida do seu cabelo, combinando tecnologia de
+                ponta com serviços de alta qualidade, Explore nossa plataforma hoje mesmo e descubra como é fácil e rápido
+                agendar seus serviços de cabeleireiro favoritos. A sua satisfação é nossa prioridade, e estamos aqui para
+                garantir que cada visita seja uma experiência excepcional.
+                
+                Experimente a HairGuide e veja como simplificamos o cuidado capilar para você!</h5>
+        <h2>Como funciona?</h2>
+        <div class="boxes">
+            <div class="box">
+                <h3>1. Escolha seu serviço</h3>
+                <p>Navegue pelo catálogo e selecione os serviços que deseja.</p>
+            </div>
+            <div class="box">
+                <h3>2. Adicione ao carrinho</h3>
+                <p>Adicione ao carrinho e revise sua seleção para garantir que esteja tudo certo.</p>
+            </div>
+            <div class="box">
+                <h3>3. Agende o dia e horário</h3>
+                <p>Escolha o dia e o horário que melhor se encaixam na sua agenda usando nosso calendário online.</p>
+            </div>
+            <div class="box">
+                <h3>4. Pronto! Foi fácil e rápido com a HairGuide</h3>
+                <p>Seu agendamento está confirmado. Aproveite a conveniência e qualidade dos serviços HairGuide.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

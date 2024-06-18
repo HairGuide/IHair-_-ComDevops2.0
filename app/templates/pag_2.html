@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Guide - Barbearia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <picture>
+                <img src="imagens/scissors_11904488 (1).png" alt="imagem tesoura" class="img1">
+            </picture>
+            <h2 class="titulo">HairGuide</h2>
+            <h1 class="frase">Aqui é mais fácil de agendar e ajuda no seu dia </h1>
+            <nav class="button">
+                <ul>
+                    <li><a href="{{ url_for('pag_inicial') }}"><button>Home</button></a></li>
+                    <li><button>Nossa unidade</button></li>
+                    <li><button>Serviços</button></li>
+                    <li><button>Meu carrinho</button></li>
+                </ul>
+            </nav>
+        </header>
+    <p class="titulop1">Populares na HairGuide</p>
+    <h4 class="titulop2">Mais procurados pelos nossos clientes</h4>
+    <main>
+        <div class="services-container">
+            <section class="service">
+                <h2>Corte</h2>
+                    <h3 class="price">R$ 25,00</h3>
+                <button>Adicionar</button>
+            </section>
+            <section class="service">
+                <h2>Corte + Sobrancelha</h2>
+                    <h3 class="price">R$ 45,00</h3>
+                <button>Adicionar</button>
+            </section>
+            <section class="service">
+                <h2>Corte Navalhado</h2>
+                    <h3 class="price">R$ 35,00</h3>
+                <button>Adicionar</button>
+            </section>
+        </div>
+    </main>
+    <header class="parte2">
+        <p class="titulop3">Serviços</p>
+        <h4 class="titulop4">Tudo que a HairGuide pode te oferecer</h4>
+        <div class="todos-Serviços">
+            <div class="todos-servicos">
+                <div class="servico-item">
+                    <h2>Corte</h2>
+                    <h3 class="price">R$ 25,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Corte + Barba</h2>
+                    <h3 class="price">R$ 45,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Corte + Sobrancelha</h2>
+                    <h3 class="price">R$ 35,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Sobrancelha</h2>
+                    <h3 class="price">R$ 10,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Penteado</h2>
+                    <h3 class="price">R$ 15,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Progressiva</h2>
+                    <h3 class="price">R$ 50,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Relaxamento</h2>
+                    <h3 class="price">R$ 40,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Luzes</h2>
+                    <h3 class="price">R$ 70,00</h3>
+                    <button>Adicionar</button>
+                </div>
+                <div class="servico-item">
+                    <h2>Tintura</h2>
+                    <h3 class="price">R$ 50,00</h3>
+                    <button>Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="parte3">
+        <picture>
+            <img src="imagens/574981-carrinho-de-compras-carrinho-icone-grátis-vetor.jpg" alt="imagem carrinho" class="img2">
+        </picture>
+        <p class="titulop5">Meu Carrinho</p>
+        <h3>Serviços Adicionados:</h3>
+        <p class="titulop6">Agendar Para:</p>
+        <div class="wrapper">
+            <div class="days-week">
+                <span>Segunda</span>
+                <span>Terça</span>
+                <span>Quarta</span>
+                <span>Quinta</span>
+                <span>Sexta</span>
+                <span>Sábado</span>
+                <span>Domingo</span>
+            </div>
+            <div class="number-days">
+                <span class="mes-anterior">30</span>
+                <span class="mes-anterior">31</span>
+            </div>
+        </div>
+        <script>
+            let el = document.querySelector('.number-days');
+            for (let i = 1; i < 31; i++) {
+                el.innerHTML += '<span>' + i + '</span>';
+            }
+        </script>
+    </header>
+    <header class="pag">
+        <p class="titulop6"><button>Finalizar Agendamento</button></p>
+        <br>
+        <a href="{{ url_for('pag_inicial') }}"><button>Voltar para a página inicial</button></a>
+    </header>
+</body>
+</html>
